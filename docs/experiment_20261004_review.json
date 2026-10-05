@@ -1,0 +1,72 @@
+{
+  "sample_count": 50,
+  "same_batch_projections": true,
+  "duplicate_keys": 0,
+  "projection_differences": {
+    "is_phishing": 2
+  },
+  "source_files_sha256": {
+    "batch_results_20261004_233606_196926.csv": "097caa0410a8fc26f6a33a2b5cb06336d6fec9dfec385bf7478d1ac6ef5a9f2f",
+    "cloaking_report_20261004_233106_858340.csv": "60d8c08834feb3297e73f5b7fcc50f61d63e8851b2125a8941ad9db135b6e37c"
+  },
+  "audit_hashes_verified": 50,
+  "observed_at_min": "2026-10-04T15:31:20.752906+00:00",
+  "observed_at_max": "2026-10-04T15:36:06.181164+00:00",
+  "verdicts": {
+    "alive": {
+      "": 2,
+      "True": 48
+    },
+    "phishing_verdict": {
+      "unknown": 27,
+      "not_detected": 17,
+      "phishing": 6
+    },
+    "cloaking_label": {
+      "unknown": 50
+    },
+    "source_label": {
+      "unlabeled": 50
+    }
+  },
+  "unknown_reason_occurrences_overlapping": {
+    "UnicodeEncodeError: 'utf-8' codec can't encode characters in position 847-848: surrogates not allowed": 1,
+    "UnicodeEncodeError: 'utf-8' codec can't encode characters in position 881-882: surrogates not allowed": 1,
+    "content_truncated": 9,
+    "request_failed": 16,
+    "incomplete_due_to_request_policy": 9,
+    "unreadable_content": 3,
+    "challenge_or_block_page": 7,
+    "http_unavailable": 2,
+    "resource_http_error": 6
+  },
+  "unknown_groups_exclusive_priority": {
+    "pipeline_unicode_error": 2,
+    "content_truncated": 9,
+    "unreadable_content": 3,
+    "challenge_or_block_page": 7,
+    "http_unavailable": 1,
+    "subresource_or_request_policy": 5
+  },
+  "raw_rule_verdicts": {
+    "not_run": 2,
+    "not_detected": 32,
+    "phishing": 16
+  },
+  "rule_positive_but_final_unknown": 10,
+  "model_statuses": {
+    "invalid_or_unavailable": 71
+  },
+  "ollama_missing_server_observations": 71,
+  "provenance_check": {
+    "batch_id": "d0791a9fd2bc47eaa23efb20d960d66c",
+    "snapshot_hashes_verified": true,
+    "current_list_byte_equal": false,
+    "current_list_text_equal": true,
+    "root_crlf_count": 50,
+    "snapshot_crlf_count": 0,
+    "csv_urls_match_snapshot": true,
+    "source_label_in_snapshot": "phishunt_suspicious",
+    "source_fetched_at": "2026-10-04T15:06:06.396716+00:00"
+  }
+}

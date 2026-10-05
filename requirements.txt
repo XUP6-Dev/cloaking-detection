@@ -1,0 +1,23 @@
+# ── Core (Python 3.12) ─────────────────────────────────────
+langgraph>=0.2.0        # graph.py 的流程組裝
+
+# ── 本機 LLM（Ollama）────────────────────────────────────────
+#   provider 只有 ollama 與 none；透過 requests 呼叫本機 Ollama 原生 API，
+#   不需要任何雲端 SDK。v2 的雲端 provider 已移除（見 docs/migration_v3.md）。
+jsonschema>=4.23        # 模型輸出的嚴格驗證
+python-dotenv           # 選用 .env（不覆寫已存在的環境變數）
+
+# ── 觀察 ─────────────────────────────────────────────────────
+requests                # 基準 HTTP 觀察、feed 下載、Ollama API
+urllib3
+beautifulsoup4          # 兩種 client 共用的文字／標題／腳本擷取
+playwright>=1.48        # route_web_socket；以 setup_playwright.py 安裝相符的 Chromium
+
+# ── JS 去混淆 ────────────────────────────────────────────────
+jsbeautifier
+
+# ── 主控台 ───────────────────────────────────────────────────
+rich                    # 批次摘要表（沒裝也能跑）
+
+# ── 測試（選用）──────────────────────────────────────────────
+# pytest

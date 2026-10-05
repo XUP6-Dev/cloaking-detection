@@ -1,0 +1,4 @@
+# Offline synthetic feed; never used for live crawling
+HTTPS://fixture.invalid:443/a?case=1
+https://fixture.invalid/a/
+javascript:untrusted_feed_instruction
